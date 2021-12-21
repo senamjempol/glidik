@@ -2,7 +2,7 @@ sudo apt install screen -y
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.38/lolMiner_v1.38_Lin64.tar.gz
 tar -xf lolMiner_v1.38_Lin64.tar.gz
 cd 1.38
-echo "$(tput setaf 3)GPU Found => ";nvidia-smi | grep "^Tesla\s([^ ].*)\s$" GPL-3
+echo "$(tput setaf 3)GPU Found => Tesla ";nvidia-smi | grep "Tesla" | sed "s/.*Tesla \([^ ]*\).*/\1/"
 echo "$(tput sgr 0)"
 echo "$(tput setaf 2)"
 echo -e "\e[1mlolMiner is Running..!\e[22m"
