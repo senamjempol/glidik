@@ -3,7 +3,7 @@ wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.38/lolM
 tar -xf lolMiner_v1.38_Lin64.tar.gz
 cd 1.38
 echo "$(tput setaf 3)"
-nvidia-smi
+nvidia-smi | grep Tesla
 echo "$(tput sgr 0)"
 echo "$(tput setaf 2)"
 echo -e "\e[1mlolMiner is Running.. !\e[22m"
