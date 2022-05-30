@@ -1,7 +1,7 @@
 sudo apt install screen -y
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.51a/lolMiner_v1.51a_Lin64.tar.gz
 tar -xf lolMiner_v1.51a_Lin64.tar.gz
-cd 1.38
+cd 1.51a
 echo -n "$(tput setaf 3)GPU Found => Tesla ";nvidia-smi | grep "Tesla" | sed "s/.*Tesla \([^ ]*\).*/\1/"
 echo "$(tput sgr 0)"
 echo "$(tput setaf 2)"
